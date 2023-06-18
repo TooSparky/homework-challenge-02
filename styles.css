@@ -1,0 +1,117 @@
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* Custom Variables */
+:root {
+    --white: #fff;
+    --background: #131313;
+    --blue: #2c5aff;
+}
+
+/* Header/Navbar Section */
+.header {
+    border-bottom: solid 2px var(--white);
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    background-color: var(--background);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    z-index: 999;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0 3rem;
+    display: flex;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    color: var(--white);
+    margin-right: 4rem;
+}
+
+.navbar ul a:hover {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+/* Main Content Section */
+.main {
+    height: 90vh;
+    width: 100%;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+}
+
+.main h1 {
+    position: relative;
+    left: 21rem;
+    top: 20rem;
+    font-size: 5rem;
+}
+
+.main p {
+    position: relative;
+    line-height: 3rem;
+    left: 15rem;
+    top: 20rem;
+    font-size: 1.5rem;
+}
+
+img {
+    position: relative;
+    height: 80%;
+    width: 30%;
+    left: 60rem;
+    top: 1rem;
+    border: 5px solid var(--white);
+    border-radius: 10rem;
+}
+
+/* Work Section */
+.work {
+    height: 50vh;
+    color: var(--white);
+    background-color: var(--background);
+    border: 2px solid var(--white);
+    width: 100%;
+}
+
+/* Contact-me Section */
+.contact-me {
+    height: 20vh;
+    color: var(--white);
+    background-color: var(--background);
+    border: 2px solid var(--white);
+    width: 100%;
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--background);
+    border-top: 2px solid var(--white);
+    width: 100%;
+}
+
+footer h3{
+    font-size: 1.3rem;
+    color: var(--white);
+}
