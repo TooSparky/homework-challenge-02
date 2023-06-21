@@ -10,6 +10,7 @@
     <body>
         <!-- Header/Navbar -->
         <header class="header">
+            <h2 class="title"><i class="fa-solid fa-laptop-code"></i>My Portfolio</h2>
             <nav class="navbar">
                 <ul>
                     <li><a href="#main">About Me</a></li>
@@ -23,38 +24,75 @@
         <!-- Main Content -->
         <main class="main" id="main">
             <div class="about-me">
-                <h1>About Me</h1>
-
-                <p>
-                    Hi, I am Zach Barnes. I am a 21 year old <br>software
-                    deveoloper in study. 
-                </p>
+                <div class="column-1">
+                    <h1 class="display">About Me</h1>
+                </div>
+                <div class="column-2">
+                    <p>
+                        Hi, I am <u class="my-name">Zach Barnes</u>. I am a 21 year old <br>software
+                        deveoloper in study. 
+                    </p>
+                </div>
             </div>
-            <div>
+            <div class="self-image">
                 <img src="./images/self-image-close-up.jpg" alt="close up picture of myself" />
             </div>
         </main>
 
         <!-- Work Section -->
         <section class="work" id="work">
-            <div>
-                <h2>Work</h2>
-
+            <div class="column-1">
+                <h2 class="display">Work</h2>
+            </div>
+            <div class="column-2" id="github">
+                <div class="row">
+                    <div class="github-1">
+                        <a href="https://github.com/TooSparky/first-challenge" target="_blank">
+                            <img src="./images/opera-snapshot-main-page.png" alt="first challenge screenshot"
+                             class="snapshot">First Challenge Project</a>
+                    </div>
+                    <div class="github-2">
+                        <a href="https://github.com/TooSparky/prework-study-guide" target="_blank">
+                            <img src="./images/prework-study-guide-snapshot.png" alt="prework study guide image"
+                             class="snapshot">Prework Study Guide</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="github-3">
+                        <a href="/" target="_blank">
+                            <img src="/" class="snapshot-3"
+                            alt="blank for now"></a>
+                    </div>
+                    <div class="github-4">
+                        <a href="/" target="_blank">
+                            <img src="/" class="snapshot-4"
+                            alt="blank for now"></a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Contact Me Section-->
         <section class="contact-me" id="contact-me">
-            <h2>Contact Me</h2>
-
-            <p>
-                
-            </p>
+            <div class="column-1">
+                <h2 class="display">Contact Me</h2>
+            </div>
+            <div class="column-2">
+                <p class="underline"><i class="fa-regular fa-envelope"></i>16zacharybarnes@gmail.com</p>
+                <a href="https://github.com/TooSparky?tab=repositories"
+                 target="_blank" class="underline"><i class="fa-brands fa-github"></i>Github</a>
+                <a href="https://www.instagram.com/zach.barnes17/"
+                 target="_blank" class="underline"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            </div>
         </section>
 
         <!-- Footer Section -->
         <footer>
-            <h3>this is the footer</h3>
+            <h3>Made by Zach Barnes 2023.</h3>
         </footer>
+
+        <!-- JavaScript link -->
+        <script src="https://kit.fontawesome.com/fbb22594c4.js" crossorigin="anonymous"></script>
+
     </body>
 </html>

@@ -11,6 +11,7 @@
     --white: #fff;
     --background: #131313;
     --blue: #2c5aff;
+    --light-blue: #1fa4c9;
 }
 
 /* Header/Navbar Section */
@@ -18,9 +19,8 @@
     border-bottom: solid 2px var(--white);
     display: flex;
     justify-content: flex-end;
-    height: 80px;
+    height: 100px;
     background-color: var(--background);
-    font-size: 1.5rem;
     font-weight: bolder;
     z-index: 999;
 }
@@ -28,6 +28,7 @@
 .navbar {
     display: flex;
     align-items: center;
+    font-size: 1.5rem;
 }
 
 .navbar ul {
@@ -43,52 +44,178 @@
 }
 
 .navbar ul a:hover {
-    color: var(--blue);
     cursor: pointer;
+    background-image: linear-gradient(to top, var(--light-blue) 0%, var(--blue)100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.title {
+    color: var(--white);
+    font-size: 4.2rem;
+    margin-right: 30rem;
+    background-image: linear-gradient(to top, var(--light-blue) 0%, var(--blue)100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.fa-solid {
+    margin-right: 2rem;
+}
+
+.my-name {
+    background-image: linear-gradient(to left, rgb(195, 0, 0) 0%, rgb(167, 26, 255) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.display {
+    background-image: linear-gradient(to top, var(--light-blue) 0%, var(--blue)100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 /* Main Content Section */
 .main {
     height: 90vh;
-    width: 100%;
     background-color: var(--background);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     color: var(--white);
 }
 
-.main h1 {
-    position: relative;
-    left: 21rem;
-    top: 20rem;
+.main .column-1 h1{
     font-size: 5rem;
-}
-
-.main p {
     position: relative;
-    line-height: 3rem;
+    top: 13rem;
     left: 15rem;
-    top: 20rem;
-    font-size: 1.5rem;
 }
 
-img {
+.main .column-2 {
+    font-size: 1.5rem;
     position: relative;
-    height: 80%;
+    top: 14rem;
+    left: 15rem;
+}
+
+.self-image img {
+    position: absolute;
+    height: 50%;
     width: 30%;
-    left: 60rem;
-    top: 1rem;
+    top: 15rem;
+    right: 20rem;
     border: 5px solid var(--white);
     border-radius: 10rem;
 }
 
+u {
+    font-weight: bold;
+}
+
 /* Work Section */
 .work {
-    height: 50vh;
+    height: 80vh;
     color: var(--white);
     background-color: var(--background);
-    border: 2px solid var(--white);
+    border-top: 2px solid var(--white);
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.work h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    padding-right: 5rem;
+    border-right: 2px solid var(--white);
+}
+
+.snapshot {
+    width: 100%;
+    height: 90%;
+}
+
+.work a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-image: linear-gradient(to top, var(--light-blue) 0%, var(--blue)100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.github-1 {
+    border: 5px solid var(--white);
+    height: 300px;
+    width: 300px;
+    position: relative;
+    right: 10rem;
+    bottom: 0.3rem;
+    background-color: var(--white);
+    z-index: 1;
+}
+
+.github-2 {
+    border: 5px solid var(--white);
+    height: 300px;
+    width: 300px;
+    position: relative;
+    right: 10rem;
+    background-color: var(--white);
+    z-index: 1;
+}
+
+.github-3 {
+    border: 5px solid var(--white);
+    height: 300px;
+    width: 300px;
+    position: relative;
+    right: 9.7rem;
+    bottom: 0.3rem;
+    background-color: var(--white);
+    z-index: 1;
+}
+
+.github-4 {
+    border: 5px solid var(--white);
+    height: 300px;
+    width: 300px;
+    position: relative;
+    right: 9.7rem;
+    background-color: var(--white);
+    z-index: 1;
+}
+
+/* Column Display */
+.column-1 {
+    display: flex;
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-2 {
+    display: flex;
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Contact-me Section */
@@ -96,12 +223,57 @@ img {
     height: 20vh;
     color: var(--white);
     background-color: var(--background);
-    border: 2px solid var(--white);
+    border-top: 2px solid var(--white);
     width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-me h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    padding-right: 5rem;
+    border-right: 2px solid var(--white);
+}
+
+.contact-me p {
+    font-size: 1.3rem;
+    margin-right: 7rem;
+    font-weight: bold;
+}
+
+.contact-me a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--white);
+    margin-right: 7rem;
+}
+
+.contact-me a:hover {
+    background-image: linear-gradient(to top, var(--light-blue) 0%, var(--blue)100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.fa-brands {
+    padding-right: 0.5rem;
+}
+
+.fa-regular {
+    padding-right: 0.5rem;
+}
+
+.underline {
+    border-bottom: 2px solid var(--light-blue);
 }
 
 /* Footer Section */
 footer {
+    height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,4 +286,86 @@ footer {
 footer h3{
     font-size: 1.3rem;
     color: var(--white);
+}
+
+/* For Smaller Screens */
+@media screen and (max-width: 992px) {
+    /* Header/Navbar Section */
+    .header {
+        text-align: center;
+    }
+    
+    .navbar ul a{
+        display: flex;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        margin-right: 0.5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    /* Main Content Section */
+    .main {
+        background-color: var(--background);
+        color: var(--white);
+    }
+
+    .self-image img {
+        position: absolute;
+        top: 37rem;
+        left: 20rem;
+        height: 40%;
+        width: 40%;
+    }
+
+    /* Work Section */
+    .work {
+
+    }
+    
+    .work h2 {
+        border-bottom: 2px solid var(--white);
+        padding-right: 0;
+        border-right: 0;
+    }
+    
+    .github-1 {
+        right: 0rem;
+        bottom: 1rem;
+    }
+    
+    .github-2 {
+        right: 0rem;
+    }
+    
+    .github-3 {
+        right: 0rem;
+        left: 1rem;
+        bottom: 1rem;
+    }
+    
+    .github-4 {
+        right: 0rem;
+        left: 1rem;
+    }
+
+    /* Contact-me Section */
+    .contact-me {
+        height: 20vh;
+        display: block;
+    }
+    
+    .contact-me h2 {
+        border-right: 0;
+        padding-right: 0;
+        border-bottom: 2px solid var(--white);
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
 }
