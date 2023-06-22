@@ -15,6 +15,9 @@ Click the items in the navbar to be taken to them, or scroll down and view. The 
 ![alt text](./images/portfolio-navbar-snapshot.png)
 ![alt text](./images/portfolio-main-snapshot.png)
 
+Link to Deployed Application:
+https://toosparky.github.io/homework-challenge-02/
+
 ## Credits
 
 Zach Barnes personal Github - https://github.com/TooSparky
