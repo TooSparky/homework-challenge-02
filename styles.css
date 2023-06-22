@@ -315,17 +315,17 @@ footer h3{
 
     .self-image img {
         position: absolute;
-        top: 37rem;
-        left: 20rem;
+        top: 31rem;
+        left: 23rem;
         height: 40%;
-        width: 40%;
-    }
-
-    /* Work Section */
-    .work {
-
+        width: 30%;
     }
     
+    /* Work Section */
+    .work {
+        height: 90vh;
+    }
+
     .work h2 {
         border-bottom: 2px solid var(--white);
         padding-right: 0;
@@ -366,6 +366,264 @@ footer h3{
     }
 }
 
+/* For smaller Screens */
 @media screen and (max-width: 768px) {
+    /* Header/Navbar Section */
+    .header {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navbar ul a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .title {
+        font-size: 3rem;
+        justify-content: center;
+    }
+    
+    /* Main Content Section */
+    .main {
+        height: 90vh;
+        background-color: var(--background);
+        display: flex;
+        flex-direction: row;
+        color: var(--white);
+    }
+    
+    .main .column-1 h1{
+        font-size: 5rem;
+        position: relative;
+        top: 13rem;
+        left: 6rem;
+    }
+    
+    .main .column-2 {
+        font-size: 1.5rem;
+        position: relative;
+        top: 14rem;
+        left: 6rem;
+    }
+    
+    .self-image img {
+        position: absolute;
+        height: 30%;
+        width: 30%;
+        top: 32rem;
+        left: 17rem;
+    }
+    
+    u {
+        font-weight: bold;
+    }
+
+    /* Work Section */
+    .work {
+        height: 90vh;
+    }
+    
+    .work h2 {
+        border-bottom: 2px solid var(--white);
+        padding-right: 0;
+        border-right: 0;
+    }
+    
+    .github-1 {
+        right: 0rem;
+        bottom: 1rem;
+    }
+    
+    .github-2 {
+        right: 0rem;
+    }
+    
+    .github-3 {
+        right: 0rem;
+        left: 1rem;
+        bottom: 1rem;
+    }
+    
+    .github-4 {
+        right: 0rem;
+        left: 1rem;
+    }
+
+    /* Contact-me Section */
+    .contact-me {
+        height: 20vh;
+        display: block;
+    }
+    
+    .contact-me h2 {
+        border-right: 0;
+        padding-right: 0;
+        border-bottom: 2px solid var(--white);
+        margin-bottom: 3rem;
+    }
+
+    .contact-me p {
+        margin: 0;
+    }
+
+    .contact-me a {
+        margin: 0;
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Header/Navbar Section */
+    #header {
+        overflow-x: hidden;
+    }
+    
+    .header {
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        position: relative;
+        left: 2rem;
+    }
+
+    .navbar ul a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 3rem;
+        justify-content: center;
+    }
+    
+    /* Main Content Section */
+    #main {
+        margin-right: 0;
+        padding-right: 0;
+        border-right: 0;
+    }
+    
+    .main {
+        height: 90vh;
+        background-color: var(--background);
+        display: flex;
+        flex-direction: row;
+        color: var(--white);
+    }
+    
+    .main .column-1 h1{
+        font-size: 5rem;
+        position: relative;
+        top: 13rem;
+        left: 3rem;
+    }
+    
+    .main .column-2 {
+        font-size: 1.2rem;
+        position: relative;
+        top: 14rem;
+        left: 3rem;
+    }
+    
+    .self-image img {
+        position: absolute;
+        height: 30%;
+        width: 40%;
+        top: 33rem;
+        left: 11rem;
+        border: 5px solid var(--white);
+        border-radius: 10rem;
+    }
+    
+    u {
+        font-weight: bold;
+    }
+
+    /* Work Section */
+    .work {
+        height: 90vh;
+    }
+    
+    .work h2 {
+        border-bottom: 2px solid var(--white);
+        padding-right: 0;
+        border-right: 0;
+    }
+    
+    .github-1 {
+        right: 0.5rem;
+        bottom: 1rem;
+        height: 250px;
+        width: 250px;
+    }
+    
+    .github-2 {
+        right: 0.5rem;
+        height: 250px;
+        width: 250px;
+    }
+    
+    .github-3 {
+        right: 0rem;
+        left: 1rem;
+        bottom: 1rem;
+        height: 250px;
+        width: 250px;
+    }
+    
+    .github-4 {
+        right: 0rem;
+        left: 1rem;
+        height: 250px;
+        width: 250px;
+    }
+
+    /* Contact-me Section */
+    .contact-me {
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-me h2 {
+        border-right: 0;
+        padding-right: 0;
+        border-bottom: 2px solid var(--white);
+        margin-bottom: 3rem;
+    }
+
+    .contact-me p {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-me a {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-me .column-2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .underline {
+        border-bottom: none;
+    }
 }
